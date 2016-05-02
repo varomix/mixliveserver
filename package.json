@@ -1,0 +1,50 @@
+{
+    "name": "mixliveserver",
+    "displayName": "MIX Live Server",
+    "description": "Live Server for Web development",
+    "version": "0.0.1",
+    "publisher": "varomix",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:mixliveserver.open"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "mixliveserver.open",
+            "title": "Start live server"
+        }],
+        "configuration": {
+            "type": "object",
+            "title": "Mix Live Server configuration",
+            "properties": {
+                "mix.rootPath":{
+                    "type": "string",
+                    "default": "build/html5",
+                    "description": "Relative root location of the index.html file"
+                },
+                "mix.port":{
+                    "type": "integer",
+                    "default": 8181,
+                    "description": "Port number for the Live Server"
+                }
+                
+            }
+            
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    }
+}
