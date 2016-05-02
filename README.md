@@ -18,4 +18,6 @@ This can be set in `User Settings` or `Workspace Settings`.
     "mix.port": 8181
 }
 ```
+
+
 **Enjoy!**

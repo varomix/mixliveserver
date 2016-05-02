@@ -46,5 +46,15 @@
     "devDependencies": {
         "typescript": "^1.8.5",
         "vscode": "^0.11.0"
-    }
+    },
+    "dependencies": {
+    "live-server": "^1.0.0",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/varomix/mixliveserver.git"
+  },
+  "license": "zlib",
+  "icon": "icon.png"
+
 }
