@@ -1,6 +1,13 @@
 # Live Preview Server
+for Visual Studio Code
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=varomix.mixliveserver)
 ## Launch a simple development server with live reloading
 Splits the editor, opens a new panel with your website
+
+###Install:
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and type enter.
+
+`ext install mixliveserver`
 
 ![preview](img/preview.png)
 
