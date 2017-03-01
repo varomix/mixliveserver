@@ -25,6 +25,8 @@ This can be set in `User Settings` or `Workspace Settings`.
     "mix.port": 8181
 }
 ```
+### IMPORTANT
+It has to be a **RELATIVE path from where your project file is**, if you have a folder for your project has to be inside there in an export folder or html folder etc.
 
 
 **Enjoy!**
