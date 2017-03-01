@@ -14,6 +14,7 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and type enter.
 ###How to use:
 
 * Set the `rootPath` configuration variable to your project root, where your `index.html` is located. 
+* Open any source file before running
 * Start the server pressing `F1` or `Command Palette` and run command `Start live server`
 
 ### Configuration options:
