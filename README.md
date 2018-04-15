@@ -13,7 +13,11 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and type enter.
 
 ###How to use:
 
-* Set the `rootPath` configuration variable to your project root, where your `index.html` is located. 
+* Set the `rootPath` configuration variable to your project root, where your `index.html` is located, this has to be a RELATIVE PATH
+from where your project file is, if you have a folder for your project has to be inside there in an export folder or html folder etc.
+example: 
+**../build/index.html**
+
 * Open any source file before running
 * Start the server pressing `F1` or `Command Palette` and run command `Start live server`
 
@@ -22,7 +26,7 @@ This can be set in `User Settings` or `Workspace Settings`.
 
 ```javascript
 {
-    "mix.rootPath": "build/html5",
+    "mix.rootPath": "build/html5",  // has to be a relative path
     "mix.port": 8181
 }
 ```
